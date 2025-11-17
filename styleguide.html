@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guía de estilos — Hospital</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a href="index.html" class="brand-link">Hospital Central</a>
+            <a class="btn" href="login.html">Login</a>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <h1>Guía de estilos</h1>
+
+
+        <section class="card">
+            <h2>Paleta de colores</h2>
+            <div class="swatches">
+                <div class="swatch" style="--bg:var(--primary)">
+                    <div>Primario</div><small>--primary: #0b78d1</small>
+                </div>
+                <div class="swatch" style="--bg:var(--accent)">
+                    <div>Acento</div><small>--accent: #0bb39b</small>
+                </div>
+                <div class="swatch" style="--bg:var(--muted-bg)">
+                    <div>Fondo</div><small>--muted-bg: #f5f7fb</small>
+                </div>
+                <div class="swatch" style="--bg:var(--danger)">
+                    <div>Alerta</div><small>--danger: #e04b4b</small>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="card">
+            <h2>Tipografía</h2>
+            <p class="muted">Fuente del sistema, pesos y tamaños predefinidos.</p>
+            <div class="type-samples">
+                <p class="display">Encabezado Display — 28px</p>
+                <p class="h1">H1 — 22px</p>
+                <p class="p">Texto de párrafo — 16px / altura 1.5</p>
+            </div>
+        </section>
+
+
+        <section class="card">
+            <h2>Componentes</h2>
+            <p>Botón primario: <button class="btn primary">Primario</button> — secundario: <button
+                    class="btn">Secundario</button></p>
+            <p>Tarjeta:</p>
+            <div class="card small">Ejemplo de tarjeta</div>
+        </section>
+
+
+        <section class="card">
+            <h2>Iconos e imágenes</h2>
+            <p class="muted">Usar SVG para iconografía ligera. Evitar imágenes de gran peso en producción.</p>
+            <div class="icons">
+                <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden>
+                    <path d="M21 8V7a2 2 0 0 0-2-2h-3" stroke="var(--primary)" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                </svg>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
