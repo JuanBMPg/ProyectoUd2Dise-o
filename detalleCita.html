@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Prescripción | Hospital Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Enlace al Dashboard -->
+                <a href="dashboard.html" class="logo">Hospital BuenaVida</a>
+                <div class="nav-links-grupo">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="citas_lista.html" class="nav-link nav-activo">Prescripciones</a>
+                    <a href="styleguide.html" class="nav-link">Guía de Estilos</a>
+                    <!-- Enlace al Login -->
+                    <a href="index.html" class="btn-logout">Salir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="contenedor-detalle">
+        <h1 class="titulo-pagina">Detalle de Cita y Registro de Prescripción</h1>
+        <p class="texto-secundario">Paciente: **Ana Torres Ruiz** (ID: **P-45892**)</p>
+
+        <div class="rejilla-2-columnas">
+            <!-- Panel de Información del Paciente -->
+            <div class="panel-datos">
+                <div class="cabecera-panel">Información del Paciente</div>
+                <div class="info-paciente">
+                    <p><strong>ID:</strong> P-45892</p>
+                    <p><strong>Nacimiento:</strong> 15/05/1980 (45 años)</p>
+                    <p><strong>Alergias:</strong> Penicilina</p>
+                    <p><strong>Motivo Cita:</strong> Revisión de tratamiento crónico</p>
+                    <p style="margin-top: 1rem;"><a href="historialClinico.html">Ver Historia Clínica Completa
+                            &rarr;</a></p>
+                </div>
+            </div>
+
+            <!-- Panel de Diagnóstico -->
+            <div class="panel-datos">
+                <div class="cabecera-panel">Diagnóstico y Notas de la Sesión</div>
+                <form>
+                    <div class="grupo-formulario">
+                        <label for="diagnostico">Diagnóstico (CIE-10)</label>
+                        <input type="text" id="diagnostico" placeholder="Ej: I25.1 Enfermedad coronaria" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="notas">Notas de la Sesión</label>
+                        <textarea id="notas" rows="5" placeholder="Observaciones, hallazgos y evolución..."></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Panel de Registro de Prescripción -->
+        <div class="panel-datos">
+            <div class="cabecera-panel">Nueva Prescripción Médica</div>
+            <form action="citas_lista.html" method="GET">
+                <div class="rejilla-2-columnas">
+                    <div class="grupo-formulario">
+                        <label for="medicamento">Medicamento / Principio Activo</label>
+                        <input type="text" id="medicamento" placeholder="Ej: Atorvastatina 20mg" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="dosis">Dosis y Frecuencia</label>
+                        <input type="text" id="dosis" placeholder="Ej: 1 comprimido cada 24h" required>
+                    </div>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="duracion">Duración del Tratamiento</label>
+                    <input type="text" id="duracion" placeholder="Ej: 3 meses / Indefinido" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="observaciones">Observaciones de la Prescripción</label>
+                    <textarea id="observaciones" rows="3"
+                        placeholder="Instrucciones especiales para el paciente o farmacia..."></textarea>
+                </div>
+
+                <div class="btn-accion-grupo">
+                    <button type="submit" class="btn-principal">Guardar Prescripción y Finalizar Cita</button>
+                    <a href="citas_lista.html" class="btn-secundario">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

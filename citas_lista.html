@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Citas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Lista de Citas</h1>
-    <p>Aquí se mostrará la lista de citas médicas.</p>
-    
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="dashboard.html" class="logo">Hospital BuenaVida</a>
+                <div class="nav-links-grupo">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="citas_lista.html" class="nav-link nav-activo">Prescripciones</a>
+                    <a href="styleguide.html" class="nav-link">Guía de Estilos</a>
+                    <!-- Redirige al Login -->
+                    <a href="index.html" class="btn-logout">Salir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedor-app">
+
+        <h1 class="titulo-pagina">Lista de Citas</h1>
+        <p class="texto-secundario">Aquí se mostrará la lista de citas médicas.</p>
+
+        <p class="texto-secundario">Este es el que "funciona", los demas son de ejemplo</p>
+        <div class="tarjeta-cita">
+            <h2 class="cita-paciente-nombre">Paciente: Ana Torres </h2>
+            <p class="cita-detalles">Fecha: 15/09/2024 | Hora: 11:30 AM | Motivo: Revisión de Resultados</p>
+            <a href="detalleCita.html" class="cita-enlace">Ver Prescripciones &rarr;</a>
+        </div>
+
+        <div class="tarjeta-cita">
+            <h2 class="cita-paciente-nombre">Paciente: Juan Pérez</h2>
+            <p class="cita-detalles">Fecha: 15/09/2024 | Hora: 10:00 AM | Motivo: Consulta General</p>
+            <a href="#" class="cita-enlace">Ver Prescripciones &rarr;</a>
+        </div>
+
+        <div class="tarjeta-cita">
+            <h2 class="cita-paciente-nombre">Paciente: Carlos Rodríguez</h2>
+            <p class="cita-detalles">Fecha: 15/09/2024 | Hora: 02:00 PM | Motivo: Control de Alergias</p>
+            <a href="#" class="cita-enlace">Ver Prescripciones &rarr;</a>
+        </div>
+
+
+
 </body>
+
 </html>

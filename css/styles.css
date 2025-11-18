@@ -1,10 +1,12 @@
 /* ==========================================================
    1. ESTILOS BASE Y GENERALES 
    ========================================================== */
-body { 
-    font-family: 'Inter', sans-serif; 
-    background-color: #f9fafb; /* Fondo claro */
-    padding-top: 64px; /* Espacio para la barra de navegación fija */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    /* Fondo claro */
+    padding-top: 64px;
+    /* Espacio para la barra de navegación fija */
     margin: 0;
     line-height: 1.5;
 }
@@ -16,7 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #eef2ff; /* Fondo azul muy claro */
+    background-color: #eef2ff;
+    /* Fondo azul muy claro */
 }
 
 /* Contenedor principal de la aplicación */
@@ -28,15 +31,16 @@ body {
 
 /* Títulos de página */
 .titulo-pagina {
-    font-size: 1.875rem; /* 30px */
-    font-weight: 700; 
-    color: #1f2937; 
+    font-size: 1.875rem;
+    /* 30px */
+    font-weight: 700;
+    color: #1f2937;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
 }
 
 .texto-secundario {
-    color: #6b7280; 
+    color: #6b7280;
     margin-bottom: 1.5rem;
 }
 
@@ -45,7 +49,7 @@ body {
    ========================================================== */
 .nav-bar {
     background-color: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -53,7 +57,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1280px; 
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 1rem;
@@ -63,45 +67,45 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem; 
+    height: 4rem;
 }
 
 .logo {
-    font-size: 1.25rem; 
-    font-weight: 700; 
-    color: #1d4ed8; 
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1d4ed8;
     text-decoration: none;
 }
 
 .nav-links-grupo {
     display: flex;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .nav-link {
-    color: #6b7280; 
+    color: #6b7280;
     transition: color 150ms;
     padding-bottom: 4px;
     text-decoration: none;
 }
 
 .nav-link:hover {
-    color: #1d4ed8; 
+    color: #1d4ed8;
 }
 
 .nav-activo {
-    color: #1f2937; 
-    border-bottom: 2px solid #3b82f6; 
+    color: #1f2937;
+    border-bottom: 2px solid #3b82f6;
     font-weight: 600;
 }
 
 .btn-logout {
     padding: 4px 16px;
-    border: 1px solid #ef4444; 
-    color: #ef4444; 
-    border-radius: 8px; 
-    font-size: 0.875rem; 
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    border-radius: 8px;
+    font-size: 0.875rem;
     cursor: pointer;
     background-color: transparent;
     transition: background-color 150ms;
@@ -110,11 +114,11 @@ body {
 }
 
 .btn-logout:hover {
-    background-color: #fef2f2; 
+    background-color: #fef2f2;
 }
 
 /* ==========================================================
-   3. ESTILOS DE LOGIN (AÑADIDOS)
+   3. ESTILOS DE PÁGINA DE LOGIN
    ========================================================== */
 .contenedor-login {
     width: 100%;
@@ -124,7 +128,8 @@ body {
 }
 
 .logo-login {
-    font-size: 2.25rem; /* text-4xl */
+    font-size: 2.25rem;
+    /* text-4xl */
     font-weight: 800;
     color: #1d4ed8;
     margin-bottom: 0.5rem;
@@ -190,9 +195,17 @@ body {
     border-left: 5px solid;
 }
 
-.tarjeta-azul { border-left-color: #2563eb; }
-.tarjeta-verde { border-left-color: #059669; }
-.tarjeta-naranja { border-left-color: #f97316; }
+.tarjeta-azul {
+    border-left-color: #2563eb;
+}
+
+.tarjeta-verde {
+    border-left-color: #059669;
+}
+
+.tarjeta-naranja {
+    border-left-color: #f97316;
+}
 
 .resumen-titulo {
     font-size: 0.875rem;
@@ -262,7 +275,7 @@ body {
 }
 
 /* ==========================================================
-   5. MÓDULO DE CITAS (LISTA) - (Resto de estilos no modificados)
+   5. LISTA DE CITAS
    ========================================================== */
 .tarjeta-cita {
     background-color: #ffffff;
@@ -321,31 +334,33 @@ body {
 }
 
 .etiqueta-pendiente {
-    background-color: #fef3c7; 
-    color: #b45309; 
+    background-color: #fef3c7;
+    color: #b45309;
 }
 
 .etiqueta-urgente {
-    background-color: #fee2e2; 
-    color: #dc2626; 
+    background-color: #fee2e2;
+    color: #dc2626;
 }
 
 .enlace-secundario-centro {
     margin-top: 2rem;
     text-align: center;
 }
+
 .enlace-secundario-centro a {
-    color: #2563eb; 
+    color: #2563eb;
     font-weight: 600;
     font-size: 0.875rem;
     text-decoration: none;
 }
+
 .enlace-secundario-centro a:hover {
-    color: #1d4ed8; 
+    color: #1d4ed8;
 }
 
 /* ==========================================================
-   6. MÓDULO DETALLE CITA / REGISTRO Y BÚSQUEDA - (Resto de estilos no modificados)
+   6. DETALLE DE CITA
    ========================================================== */
 .contenedor-detalle {
     max-width: 900px;
@@ -374,7 +389,7 @@ body {
 }
 
 .cabecera-panel {
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     font-weight: 600;
     color: #1f2937;
     margin-bottom: 15px;
@@ -387,12 +402,15 @@ body {
     color: #4b5563;
     margin-bottom: 5px;
 }
+
 .info-paciente a {
-    color: #047857; /* text-teal-600 */
+    color: #047857;
+    /* text-teal-600 */
     font-weight: 600;
     font-size: 0.875rem;
     text-decoration: none;
 }
+
 .info-paciente a:hover {
     text-decoration: underline;
 }
@@ -409,7 +427,7 @@ body {
     margin-bottom: 5px;
 }
 
-.grupo-formulario input[type="text"], 
+.grupo-formulario input[type="text"],
 .grupo-formulario textarea,
 .grupo-formulario select,
 .grupo-formulario input[type="password"] {
@@ -422,7 +440,7 @@ body {
     transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.grupo-formulario input:focus, 
+.grupo-formulario input:focus,
 .grupo-formulario textarea:focus,
 .grupo-formulario select:focus,
 .grupo-formulario input[type="password"]:focus {
@@ -475,13 +493,16 @@ body {
     color: #2563eb;
     border-color: #93c5fd;
 }
+
 .cabecera-resultados {
     color: #059669;
     border-color: #a7f3d0;
 }
+
 .btn-buscar {
     width: 100%;
 }
+
 .item-resultado {
     display: flex;
     justify-content: space-between;
@@ -523,7 +544,7 @@ body {
 
 
 /* ==========================================================
-   7. HISTORIA CLÍNICA (HC)
+   7. MÓDULO HISTORIAL CLÍNICO
    ========================================================== */
 .contenedor-hc {
     max-width: 1000px;
@@ -542,7 +563,8 @@ body {
 .cabecera-hc {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #047857; /* Color Teal para diferenciar */
+    color: #047857;
+    /* Color Teal para diferenciar */
     margin-bottom: 15px;
     border-bottom: 2px solid #a7f3d0;
     padding-bottom: 10px;

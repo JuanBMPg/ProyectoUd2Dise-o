@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica | Hospital Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Enlace al Dashboard -->
+                <a href="dashboard.html" class="logo">Hospital BuenaVida</a>
+                <div class="nav-links-grupo">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="citas_lista.html" class="nav-link nav-activo">Prescripciones</a>
+                    <a href="styleguide.html" class="nav-link">Guía de Estilos</a>
+                    <!-- Enlace al Login -->
+                    <a href="index.html" class="btn-logout">Salir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor-hc">
+        <h1 class="titulo-pagina">Historia Clínica - Ana Torres Ruiz (P-45892)</h1>
+
+
+        <div class="seccion-hc">
+            <div class="cabecera-hc">Datos Básicos y Contacto</div>
+            <div class="rejilla-datos">
+                <div class="item-dato"><strong>NIF/NIE</strong> 45892112T</div>
+                <div class="item-dato"><strong>Fecha Nacimiento</strong> 15/05/1980</div>
+                <div class="item-dato"><strong>Teléfono</strong> 6XX XXX XXX</div>
+                <div class="item-dato"><strong>Alergias Conocidas</strong> Penicilina, Látex</div>
+            </div>
+        </div>
+
+
+        <div class="seccion-hc">
+            <div class="cabecera-hc">Diagnósticos Recientes y Crónicos</div>
+            <div class="registro-hc">
+                <h4>Diagnóstico Crónico: Hipertensión esencial (I10)</h4>
+                <p>Establecida en 2018. Controlada con medicación. Último registro de TA: 135/85.</p>
+                <p class="registro-meta">Fecha: 12/03/2024 | Dr. J. Morales (Medicina Interna)</p>
+            </div>
+            <div class="registro-hc">
+                <h4>Episodio Agudo: Gastroenteritis (A09)</h4>
+                <p>Tratamiento sintomático. Descartada infección bacteriana grave.</p>
+                <p class="registro-meta">Fecha: 05/11/2025 | Dr. M. Ruiz (Urgencias)</p>
+            </div>
+        </div>
+
+
+        <div class="seccion-hc">
+            <div class="cabecera-hc">Prescripciones Médicas Activas</div>
+            <div class="registro-hc">
+                <h4>Atorvastatina 20mg</h4>
+                <p>1 comprimido/día. Para control de colesterol. Renovación automática.</p>
+                <p class="registro-meta">Emitida: 01/01/2024 | Dr. J. Morales</p>
+            </div>
+            <div class="registro-hc">
+                <h4>Enalapril 10mg</h4>
+                <p>1 comprimido/día. Para control de hipertensión. Vigilar mareos al inicio.</p>
+                <p class="registro-meta">Emitida: 01/01/2024 | Dr. J. Morales</p>
+            </div>
+        </div>
+        <div class="enlace-secundario-centro">
+            <a href="citas_lista.html" class="btn-secundario" style="margin-left: 0;">Volver al Listado</a>
+        </div>
+    </div>
+</body>
+
+</html>

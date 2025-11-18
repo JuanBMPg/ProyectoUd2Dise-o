@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda Pacientes | Hospital Admin</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Enlace al Dashboard -->
+                <a href="dashboard.html" class="logo">Hospital BuenaVida</a>
+                <div class="nav-links-grupo">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="citas_lista.html" class="nav-link nav-activo">Prescripciones</a>
+                    <a href="styleguide.html" class="nav-link">Guía de Estilos</a>
+                    <!-- Enlace al Login -->
+                    <a href="index.html" class="btn-logout">Salir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor-detalle">
+        <h1 class="titulo-pagina">Búsqueda de Pacientes (Sin Cita)</h1>
+        <p class="texto-secundario">Utilice los campos para localizar pacientes no presentes en la agenda diaria.</p>
+
+        <!-- Panel de Búsqueda -->
+        <div class="panel-datos">
+            <div class="cabecera-panel cabecera-busqueda">Filtros de Búsqueda</div>
+            <form action="busqueda_pacientes.html" method="GET">
+                <div class="rejilla-2-columnas">
+                    <div class="grupo-formulario">
+                        <label for="nombre-busqueda">Nombre / Apellidos</label>
+                        <input type="text" id="nombre-busqueda" placeholder="Ej: Torres Ruiz">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="id_paciente_busqueda">ID Paciente</label>
+                        <input type="text" id="id_paciente_busqueda" placeholder="Ej: P-45892">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="nif">NIF / NIE</label>
+                        <input type="text" id="nif" placeholder="Ej: 45892112T">
+                    </div>
+                </div>
+                <div class="grupo-formulario">
+                    <button type="submit" class="btn-buscar">Buscar Paciente</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Resultados de Búsqueda (Simulados) -->
+        <div class="panel-datos" style="padding-top: 20px;">
+            <div class="cabecera-panel cabecera-resultados">Resultados de Búsqueda</div>
+
+            <div id="lista-resultados">
+                <!-- Resultado 1 -->
+                <div class="item-resultado">
+                    <div class="info-resultado">
+                        <h4>Ana Torres Ruiz</h4>
+                        <p>ID: P-45892 | NIF: 45892112T | Nac: 15/05/1980</p>
+                    </div>
+                    <div class="acciones-resultado">
+                        <a href="historialClinico.html">Ver HC</a>
+                    </div>
+                </div>
+
+                <!-- Resultado 2 -->
+                <div class="item-resultado">
+                    <div class="info-resultado">
+                        <h4>Javier Torres Soto</h4>
+                        <p>ID: P-19045 | NIF: 33456789S | Nac: 22/11/1995</p>
+                    </div>
+                    <div class="acciones-resultado">
+                        <a href="historialClinico.html">Ver HC</a>
+                    </div>
+                </div>
+
+                <p style="text-align: center; font-size: 0.9rem; color: #9ca3af; margin-top: 15px;">Mostrando 2
+                    resultados.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
