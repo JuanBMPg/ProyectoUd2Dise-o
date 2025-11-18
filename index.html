@@ -1,81 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Hospital — Principal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso al Sistema | Hospital Admin</title>
+    <!-- Enlace al archivo de estilos centralizado -->
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+<!-- La clase "cuerpo-login" establece el fondo y centra el contenido -->
+<body class="cuerpo-login"> 
+    
+    <!-- El "contenedor-login" limita el ancho del formulario -->
+    <div class="contenedor-login">
+        <h1 class="logo-login">Hospital Admin</h1>
+        <p class="subtitulo-login">Módulo de Prescripciones Médicas</p>
+        
+        <!-- La "tarjeta-login" aplica el fondo blanco, el sombreado y el redondeo -->
+        <div class="tarjeta-login">
+            <h2 class="cabecera-tarjeta-login">Iniciar Sesión</h2>
+            
+            <form action="dashboard.html" method="GET">
+                <div class="grupo-formulario">
+                    <label for="usuario">Usuario / ID Médico</label>
+                    <input type="text" id="usuario" placeholder="Ej: Dra. Elena Vidal" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" placeholder="********" required>
+                </div>
+                
+                <button type="submit" class="btn-principal btn-login">Acceder al Sistema</button>
+            </form>
 
-<body>
-    <nav class="topbar">
-        <div class="container topbar-inner">
-            <div class="brand-inline">
-                <a href="index.html" class="brand-link">
-                    <svg class="logo-sm" viewBox="0 0 48 48" aria-hidden>
-                        <rect x="6" y="6" width="36" height="36" rx="6" fill="var(--primary)" />
-                        <path d="M24 12v24M12 24h24" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
-                    </svg>
-                    <span>Hospital Central</span>
-                </a>
-            </div>
-            <div class="top-actions">
-                <a class="btn" href="login.html">Cerrar sesión</a>
-            </div>
+            <p class="enlace-olvido"><a href="#">¿Olvidaste tu contraseña?</a></p>
         </div>
-    </nav>
-
-
-    <div class="container grid two-col">
-        <aside class="sidebar">
-            <ul class="nav">
-                <li><a href="index.html" class="active">Panel</a></li>
-                <li><a href="appointments.html">Citas</a></li>
-                <li><a href="history.html">Historia clínica</a></li>
-                <li><a href="search.html">Buscar pacientes</a></li>
-                <li><a href="styleguide.html">Guía de estilos</a></li>
-            </ul>
-        </aside>
-
-
-        <main class="content">
-            <header class="page-header">
-                <h2>Panel principal</h2>
-                <p class="muted">Accede a las funcionalidades desde la barra izquierda.</p>
-            </header>
-
-
-            <section class="cards">
-                <article class="card small">
-                    <h3>Próximas citas</h3>
-                    <p class="big">8</p>
-                    <a href="appointments.html" class="link">Ver lista</a>
-                </article>
-
-
-                <article class="card small">
-                    <h3>Pacientes activos</h3>
-                    <p class="big">134</p>
-                </article>
-
-
-                <article class="card small">
-                    <h3>Prescripciones hoy</h3>
-                    <p class="big">24</p>
-                </article>
-            </section>
-
-
-            <section class="card">
-                <h3>Actividad reciente</h3>
-                <ul class="activity-list">
-                    <li><strong>Dr. García</strong> registró una receta para <em>Ana Pérez</em>.</li>
-                    <li><strong>Enfermería</strong> marcó llegada de paciente <em>J. Morales</em>.</li>
-                </ul>
-            </section>
-        </main>
     </div>
 </body>
-
 </html>

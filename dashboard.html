@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Hospital Admin</title>
+    <!-- Enlace al archivo de estilos centralizado -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="dashboard.html" class="logo">Hospital Admin</a>
+                <div class="nav-links-grupo">
+                    <a href="dashboard.html" class="nav-link nav-activo">Dashboard</a>
+                    <a href="citas_lista.html" class="nav-link">Prescripciones</a>
+                    <a href="styleguide.html" class="nav-link">Guía de Estilos</a>
+                    <!-- Redirige al Login -->
+                    <a href="index.html" class="btn-logout">Salir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido del Dashboard -->
+    <div class="contenedor-app">
+        <h1 class="titulo-pagina">Dashboard Médico</h1>
+        <p class="texto-secundario">Bienvenido/a, **Dr/a. [Nombre del Usuario]**. Resumen de actividad reciente.</p>
+
+        <div class="rejilla-3-columnas">
+            <!-- Tarjeta de Resumen 1 -->
+            <div class="tarjeta-resumen tarjeta-azul">
+                <h3 class="resumen-titulo">Citas Pendientes Hoy</h3>
+                <p class="resumen-valor">3</p>
+                <a href="citas_lista.html" class="resumen-enlace">Ver Agenda Completa &rarr;</a>
+            </div>
+
+            <!-- Tarjeta de Resumen 2 -->
+            <div class="tarjeta-resumen tarjeta-verde">
+                <h3 class="resumen-titulo">Prescripciones Emitidas (7 Días)</h3>
+                <p class="resumen-valor">45</p>
+                <a href="#" class="resumen-enlace">Revisar Histórico &rarr;</a>
+            </div>
+            
+            <!-- Tarjeta de Resumen 3 -->
+            <div class="tarjeta-resumen tarjeta-naranja">
+                <h3 class="resumen-titulo">Alergias Detectadas</h3>
+                <p class="resumen-valor">5 alertas nuevas</p>
+                <a href="#" class="resumen-enlace">Gestionar Alertas &rarr;</a>
+            </div>
+        </div>
+        
+        <!-- Sección de Acceso Rápido -->
+        <div class="seccion-dashboard">
+            <h2 class="cabecera-dashboard">Acceso Rápido</h2>
+            <div class="rejilla-2-columnas">
+                <a href="citas_lista.html" class="panel-acceso panel-acceso-citas">
+                    <h3 class="acceso-titulo">Gestión de Citas y Prescripciones</h3>
+                    <p class="acceso-descripcion">Inicia la atención a pacientes programados y registra sus tratamientos.</p>
+                </a>
+                <a href="busqueda_pacientes.html" class="panel-acceso panel-acceso-busqueda">
+                    <h3 class="acceso-titulo">Búsqueda Rápida de Pacientes</h3>
+                    <p class="acceso-descripcion">Localiza la Historia Clínica de cualquier paciente por ID o NIF.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
