@@ -1,0 +1,22 @@
+// Paleta corporativa (alineada con módulo principal)
+$color-primario: #1A73E8;     // Azul hospital
+$color-secundario: #0C47A1;
+$color-acento: #4CAF50;       // Verde para “libre/estabilidad”
+$color-peligro: #D32F2F;      // Alertas (cama ocupada grave)
+$color-alerta: #FBC02D;
+$color-fondo: #F5F7FA;        // Fondo claro
+$color-blanco: #ffffff;
+$color-gris: #e0e0e0;
+$color-texto: #333;
+
+// Tipografía
+$fuente: 'Segoe UI', Roboto, sans-serif;
+
+// Dimensiones
+$radio: 10px;
+$sombra: 0 4px 12px rgba(0,0,0,0.08);
+$padding: 1.2rem;
+
+$color-libre: #2ecc71;
+$color-ocupada: #e74c3c;
+$color-mantenimiento: #f1c40f;

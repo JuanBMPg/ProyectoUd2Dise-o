@@ -1,0 +1,27 @@
+@use 'variables' as *;
+
+.mapa-camas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.cama {
+  @extend .card;
+  text-align: center;
+  padding: 2rem;
+  border-left: 5px solid transparent;
+
+  &.libre { border-color: $color-acento; }
+  &.ocupada { border-color: $color-alerta; }
+  &.critica { border-color: $color-peligro; }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .estado {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+.medicacion-tabla {
+  @extend .table;
+
+  td, th {
+    font-size: 1rem;
+  }
+
+  .hora {
+    font-weight: bold;
+    color: $color-secundario;
+  }
+}

@@ -1,0 +1,32 @@
+/** Mapa de camas **/
+@use 'variables' as *;
+
+.bed-map {
+  padding: 2rem;
+
+  .bed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .bed {
+    padding: 1rem;
+    border-radius: $radio;
+    background: white;
+    box-shadow: 0 0 6px #0001;
+
+    &--ocupada {
+      background: $color-ocupada;
+    }
+
+    &--libre {
+      background: $color-libre;
+    }
+  }
+}
+
+/** Hoja de medicación **/
+.med-sheet {
+  padding: 2rem;
+}
