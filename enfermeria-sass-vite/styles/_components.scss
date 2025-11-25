@@ -1,61 +1,61 @@
+@use 'mixins' as *;
 @use 'variables' as *;
 
-.btn {
-  padding: 0.8rem 1.5rem;
-  border-radius: $radio;
-  background: $color-primario;
+.btn-principal {
+  @include boton-base;
+  background-color: $color-primario;
   color: white;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: $sombra;
-  transition: 0.2s;
 
   &:hover {
-    background: $color-secundario;
+    background-color: darken($color-primario, 8%);
   }
 }
 
-.card {
-  background: $color-blanco;
-  padding: $padding;
-  border-radius: $radio;
-  box-shadow: $sombra;
-  margin-bottom: 2rem;
-}
-
-.table {
-  width: 100%;
-  background: white;
-  border-collapse: collapse;
-  box-shadow: $sombra;
-
-  th {
-    background: $color-primario;
-    color: white;
-    padding: 1rem;
-    text-align: left;
-  }
-
-  td {
-    padding: 1rem;
-    border-bottom: 1px solid $color-gris;
-  }
-
-  tr:hover {
-    background: rgba(0,0,0,0.03);
-  }
-}
-
-// Etiquetas para estados de camas
-.etiqueta {
-  padding: 0.4rem 0.8rem;
-  border-radius: $radio;
+.btn-secundario {
+  @include boton-base;
+  background-color: $color-secundario;
   color: white;
-  font-weight: bold;
-  font-size: 0.9rem;
 
-  &.libre { background: $color-acento; }
-  &.ocupada { background: $color-alerta; }
-  &.critica { background: $color-peligro; }
+  &:hover {
+    background-color: darken($color-secundario, 8%);
+  }
+}
+
+.btn-logout {
+  @include boton-base;
+  background-color: transparent;
+  border: 1px solid $color-peligro;
+  color: $color-peligro;
+
+  &:hover {
+    background-color: #fef2f2;
+  }
+}
+
+.tarjeta {
+  @include tarjeta;
+}
+
+/* Etiquetas */
+.etiqueta-estado {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.etiqueta-pendiente {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.etiqueta-urgente {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.etiqueta-exito {
+  background-color: #d1fae5;
+  color: #065f46;
 }

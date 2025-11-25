@@ -1,2 +1,2 @@
 // Solo enlaza los estilos, sin lógica JS
-import './styles/main.scss';
+import '../enfermeria-sass-vite/styles/main.scss';

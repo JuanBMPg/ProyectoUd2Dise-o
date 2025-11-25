@@ -1,22 +1,29 @@
-// Paleta corporativa (alineada con módulo principal)
-$color-primario: #1A73E8;     // Azul hospital
-$color-secundario: #0C47A1;
-$color-acento: #4CAF50;       // Verde para “libre/estabilidad”
-$color-peligro: #D32F2F;      // Alertas (cama ocupada grave)
-$color-alerta: #FBC02D;
-$color-fondo: #F5F7FA;        // Fondo claro
-$color-blanco: #ffffff;
-$color-gris: #e0e0e0;
-$color-texto: #333;
+// COLORES PRINCIPALES
+$color-primario: #2563eb;
+$color-secundario: #6b7280;
+$color-exito: #059669;
+$color-alerta: #f97316;
+$color-peligro: #ef4444;
 
-// Tipografía
-$fuente: 'Segoe UI', Roboto, sans-serif;
+$color-fondo: #f9fafb;
+$color-fondo-login: #eef2ff;
+$color-texto: #1f2937;
+$color-texto-secundario: #6b7280;
 
-// Dimensiones
-$radio: 10px;
-$sombra: 0 4px 12px rgba(0,0,0,0.08);
-$padding: 1.2rem;
+$color-borde: #e5e7eb;
+$color-borde-suave: #f3f4f6;
 
-$color-libre: #2ecc71;
-$color-ocupada: #e74c3c;
-$color-mantenimiento: #f1c40f;
+// TIPOGRAFÍA
+$fuente-base: 'Inter', sans-serif;
+
+// RADIOS
+$radio-sm: 4px;
+$radio-md: 8px;
+$radio-lg: 12px;
+
+// SOMBRAS
+$sombra-soft: 0 1px 3px rgba(0,0,0,0.05);
+$sombra-md: 0 4px 6px rgba(0,0,0,0.1);
+$sombra-lg: 
+  0 10px 15px -3px rgba(0,0,0,0.1),
+  0 4px 6px -4px rgba(0,0,0,0.1);

@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+body {
+  font-family: $fuente-base;
+  background-color: $color-fondo;
+  margin: 0;
+  padding-top: 64px;
+  line-height: 1.5;
+}
+
+.cuerpo-login {
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $color-fondo-login;
+}
+
+.contenedor-app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo-pagina {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: $color-texto;
+  margin: 1rem 0 1.5rem;
+}
+
+.texto-secundario {
+  color: $color-texto-secundario;
+  margin-bottom: 1.5rem;
+}

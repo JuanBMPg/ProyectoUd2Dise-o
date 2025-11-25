@@ -1,31 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Camas | Enfermería</title>
+</head>
+
 <body>
-  <header class="header">Módulo de Enfermería – Mapa de Camas</header>
 
-  <div class="container">
-    <h1>Mapa de camas</h1>
+  <header class="nav-bar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="dashboard.html" class="logo">Hospital Admin</a>
 
-    <div class="mapa-camas-grid">
-
-      <div class="cama libre">
-        <h2>Cama 101</h2>
-        <p>Estado actual:</p>
-        <span class="etiqueta libre">Libre</span>
+        <div class="nav-links-grupo">
+          <a href="enfermeria.html" class="nav-link">Enfermería</a>
+          <a href="#" class="nav-link nav-activo">Mapa de Camas</a>
+          <a href="login.html" class="btn-logout">Salir</a>
+        </div>
       </div>
-
-      <div class="cama ocupada">
-        <h2>Cama 102</h2>
-        <p>Paciente: Juan Pérez</p>
-        <span class="etiqueta ocupada">Ocupada</span>
-      </div>
-
-      <div class="cama critica">
-        <h2>Cama 103</h2>
-        <p>Paciente: María López</p>
-        <span class="etiqueta critica">Crítica</span>
-      </div>
-
     </div>
+  </header>
+
+  <div class="contenedor-app">
+    <h1 class="titulo-pagina">Mapa de Camas</h1>
+
+    <section class="rejilla-3-columnas">
+      <div class="tarjeta-resumen tarjeta-verde">
+        <p class="resumen-titulo">Cama 101</p>
+        <p class="resumen-valor" style="font-size:1.5rem;">Libre</p>
+        <span class="etiqueta-estado etiqueta-exito">LIBRE</span>
+      </div>
+
+      <div class="tarjeta-resumen tarjeta-naranja">
+        <p class="resumen-titulo">Cama 102</p>
+        <p class="resumen-valor" style="font-size:1.5rem;">Ocupada</p>
+        <span class="etiqueta-estado etiqueta-urgente">OCUPADA</span>
+        <p class="texto-secundario" style="margin-top:10px;">Paciente: Juan Pérez</p>
+      </div>
+
+      <div class="tarjeta-resumen tarjeta-azul">
+        <p class="resumen-titulo">Cama 103</p>
+        <p class="resumen-valor" style="font-size:1.5rem;">Mantenimiento</p>
+        <span class="etiqueta-estado etiqueta-pendiente">MANTENIMIENTO</span>
+      </div>
+    </section>
   </div>
+  <script type="module" src="main.js"></script>
 </body>
-<script type="module" src="main.js"></script>
+
 </html>

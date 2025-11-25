@@ -1,0 +1,21 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.grupo-formulario {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea,
+  select {
+    @include input-base;
+  }
+}

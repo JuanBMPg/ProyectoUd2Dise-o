@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+
+@mixin tarjeta {
+  background-color: white;
+  border-radius: $radio-md;
+  box-shadow: $sombra-md;
+  padding: 20px;
+}
+
+@mixin boton-base {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: $radio-md;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+@mixin input-base {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: $radio-md;
+  font-size: 1rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+
+  &:focus {
+    border-color: $color-primario;
+    box-shadow: 0 0 0 1px $color-primario;
+    outline: none;
+  }
+}
