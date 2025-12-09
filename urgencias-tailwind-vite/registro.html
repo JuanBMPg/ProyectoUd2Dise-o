@@ -9,9 +9,9 @@
 <body class="bg-slate-100 min-h-screen">
   <!-- Header -->
   <header class="bg-blue-900 text-white p-4 shadow-lg">
-    <div class="container mx-auto flex items-center justify-between">
-      <h1 class="text-2xl font-bold">🏥 Módulo de Urgencias</h1>
-      <nav class="flex gap-4">
+    <div class="container mx-auto">
+      <h1 class="text-2xl font-bold text-center mb-3">🏥 Módulo de Urgencias</h1>
+      <nav class="flex gap-4 justify-center">
         <a href="index.html" class="px-4 py-2 rounded hover:bg-blue-700">Dashboard</a>
         <a href="registro.html" class="bg-blue-700 px-4 py-2 rounded hover:bg-blue-600">Registro</a>
         <a href="triaje.html" class="px-4 py-2 rounded hover:bg-blue-700">Triaje</a>
@@ -33,7 +33,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Nombre *</label>
               <input 
                 type="text" 
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="Nombre completo"
                 required
               >
@@ -42,7 +42,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Apellidos *</label>
               <input 
                 type="text" 
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="Apellidos"
                 required
               >
@@ -51,7 +51,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">DNI/NIE *</label>
               <input 
                 type="text" 
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="12345678A"
                 required
               >
@@ -60,13 +60,13 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Fecha de Nacimiento *</label>
               <input 
                 type="date" 
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 required
               >
             </div>
             <div>
               <label class="block text-sm font-semibold text-slate-700 mb-2">Sexo *</label>
-              <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800">
                 <option value="">Seleccionar...</option>
                 <option value="M">Masculino</option>
                 <option value="F">Femenino</option>
@@ -77,7 +77,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Teléfono *</label>
               <input 
                 type="tel" 
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="600 123 456"
                 required
               >
@@ -93,14 +93,14 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Motivo de Consulta *</label>
               <textarea 
                 rows="3"
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="Describa el motivo de la consulta..."
                 required
               ></textarea>
             </div>
             <div>
               <label class="block text-sm font-semibold text-slate-700 mb-2">Modo de Llegada *</label>
-              <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800">
                 <option value="">Seleccionar...</option>
                 <option value="ambulancia">Ambulancia</option>
                 <option value="propio">Medios propios</option>
@@ -112,7 +112,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Hora de Llegada *</label>
               <input 
                 type="time" 
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 required
               >
             </div>
@@ -127,7 +127,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Alergias</label>
               <input 
                 type="text" 
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="Medicamentos, alimentos, etc."
               >
             </div>
@@ -135,7 +135,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Medicación Actual</label>
               <textarea 
                 rows="2"
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="Medicamentos que toma actualmente..."
               ></textarea>
             </div>
@@ -143,7 +143,7 @@
               <label class="block text-sm font-semibold text-slate-700 mb-2">Antecedentes Médicos</label>
               <textarea 
                 rows="2"
-                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-800"
                 placeholder="Enfermedades previas, cirugías..."
               ></textarea>
             </div>
