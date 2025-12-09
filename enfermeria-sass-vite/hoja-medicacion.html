@@ -25,15 +25,18 @@
   </header>
 
   <div class="contenedor-app">
-    <h1 class="titulo-pagina">Hoja de medicación</h1>
+    <h1 class="titulo-pagina">Hoja de Medicación</h1>
+    <p class="texto-secundario">Registro y administración de medicamentos por paciente</p>
 
-    <div class="panel-datos">
-      <h2 class="cabecera-panel">Paciente</h2>
-      <p><strong>Juan Pérez</strong> — Cama 102</p>
-    </div>
-
-    <div class="panel-datos">
-      <h2 class="cabecera-panel">Administración</h2>
+    <!-- Paciente 1 -->
+    <div class="panel-datos" style="margin-bottom: 2rem; border-left: 4px solid #3b82f6;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <div>
+          <h2 class="cabecera-panel" style="margin: 0; color: #1e40af;">Juan Pérez García</h2>
+          <p style="margin: 0.25rem 0; color: #6b7280;">Cama 102 • Habitación 1A • 65 años • NHC: 123456</p>
+        </div>
+        <span style="background-color: #dbeafe; color: #1e40af; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;">Activo</span>
+      </div>
 
       <table class="tabla-estandar">
         <thead>
@@ -42,25 +45,152 @@
             <th>Medicamento</th>
             <th>Dosis</th>
             <th>Vía</th>
+            <th>Estado</th>
             <th>Observaciones</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>08:00</td>
+            <td><strong>08:00</strong></td>
             <td>Paracetamol</td>
             <td>1 g</td>
             <td>Oral</td>
-            <td>—</td>
+            <td><span style="background-color: #d1fae5; color: #065f46; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Administrado</span></td>
+            <td>Sin incidencias</td>
           </tr>
 
           <tr>
-            <td>12:00</td>
+            <td><strong>12:00</strong></td>
             <td>Enoxaparina</td>
             <td>40 mg</td>
-            <td>SC</td>
+            <td>Subcutánea</td>
+            <td><span style="background-color: #d1fae5; color: #065f46; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Administrado</span></td>
             <td>Revisar coagulación</td>
+          </tr>
+
+          <tr style="background-color: #fef3c7;">
+            <td><strong>14:00</strong></td>
+            <td>Omeprazol</td>
+            <td>20 mg</td>
+            <td>Oral</td>
+            <td><span style="background-color: #fef3c7; color: #92400e; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Pendiente</span></td>
+            <td>Administrar antes de comida</td>
+          </tr>
+
+          <tr>
+            <td><strong>20:00</strong></td>
+            <td>Atorvastatina</td>
+            <td>10 mg</td>
+            <td>Oral</td>
+            <td><span style="background-color: #e5e7eb; color: #374151; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Programado</span></td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Paciente 2 -->
+    <div class="panel-datos" style="margin-bottom: 2rem; border-left: 4px solid #10b981;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <div>
+          <h2 class="cabecera-panel" style="margin: 0; color: #047857;">María López Ruiz</h2>
+          <p style="margin: 0.25rem 0; color: #6b7280;">Cama 205 • Habitación 2B • 52 años • NHC: 234567</p>
+        </div>
+        <span style="background-color: #d1fae5; color: #065f46; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;">Activo</span>
+      </div>
+
+      <table class="tabla-estandar">
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Medicamento</th>
+            <th>Dosis</th>
+            <th>Vía</th>
+            <th>Estado</th>
+            <th>Observaciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><strong>08:00</strong></td>
+            <td>Metformina</td>
+            <td>850 mg</td>
+            <td>Oral</td>
+            <td><span style="background-color: #d1fae5; color: #065f46; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Administrado</span></td>
+            <td>Control glucemia: 120 mg/dL</td>
+          </tr>
+
+          <tr style="background-color: #fef3c7;">
+            <td><strong>13:00</strong></td>
+            <td>Insulina rápida</td>
+            <td>6 UI</td>
+            <td>Subcutánea</td>
+            <td><span style="background-color: #fef3c7; color: #92400e; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Pendiente</span></td>
+            <td>Antes de almuerzo</td>
+          </tr>
+
+          <tr>
+            <td><strong>21:00</strong></td>
+            <td>Metformina</td>
+            <td>850 mg</td>
+            <td>Oral</td>
+            <td><span style="background-color: #e5e7eb; color: #374151; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Programado</span></td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Paciente 3 -->
+    <div class="panel-datos" style="border-left: 4px solid #f59e0b;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <div>
+          <h2 class="cabecera-panel" style="margin: 0; color: #b45309;">Carlos Sánchez Mora</h2>
+          <p style="margin: 0.25rem 0; color: #6b7280;">Cama 301 • Habitación 3A • 78 años • NHC: 345678</p>
+        </div>
+        <span style="background-color: #fef3c7; color: #92400e; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600;">⚠️ Alertas</span>
+      </div>
+
+      <table class="tabla-estandar">
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Medicamento</th>
+            <th>Dosis</th>
+            <th>Vía</th>
+            <th>Estado</th>
+            <th>Observaciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><strong>09:00</strong></td>
+            <td>Furosemida</td>
+            <td>40 mg</td>
+            <td>Intravenosa</td>
+            <td><span style="background-color: #d1fae5; color: #065f46; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Administrado</span></td>
+            <td>Control diuresis</td>
+          </tr>
+
+          <tr>
+            <td><strong>10:00</strong></td>
+            <td>Digoxina</td>
+            <td>0.25 mg</td>
+            <td>Oral</td>
+            <td><span style="background-color: #d1fae5; color: #065f46; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">Administrado</span></td>
+            <td>FC: 72 lpm</td>
+          </tr>
+
+          <tr style="background-color: #fee2e2;">
+            <td><strong>14:00</strong></td>
+            <td>Warfarina</td>
+            <td>5 mg</td>
+            <td>Oral</td>
+            <td><span style="background-color: #fee2e2; color: #991b1b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem;">URGENTE</span></td>
+            <td>⚠️ Controlar INR - Valor actual 3.2</td>
           </tr>
         </tbody>
       </table>

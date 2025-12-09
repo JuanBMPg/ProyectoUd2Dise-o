@@ -29,11 +29,52 @@
 
   <div class="contenedor-app">
     <h1 class="titulo-pagina">Unidad de Enfermería</h1>
-    <p class="texto-secundario">Accede a los módulos operativos del área.</p>
+    <p class="texto-secundario">Bienvenido/a al módulo de gestión de enfermería. Resumen de actividad actual.</p>
 
-    <div style="display:flex; gap:20px; margin-top:2rem;">
-      <a class="btn-principal" href="mapa-camas.html">Mapa de Camas</a>
-      <a class="btn-secundario" href="hoja-medicacion.html">Hoja de Medicación</a>
+    <!-- Tarjetas de Estadísticas -->
+    <div class="rejilla-3-columnas" style="margin-bottom: 2rem;">
+      <div class="tarjeta-resumen tarjeta-azul">
+        <h3 class="resumen-titulo">Pacientes Ingresados</h3>
+        <p class="resumen-valor">24</p>
+        <a href="mapa-camas.html" class="resumen-enlace">Ver Mapa de Camas &rarr;</a>
+      </div>
+
+      <div class="tarjeta-resumen tarjeta-verde">
+        <h3 class="resumen-titulo">Medicaciones Hoy</h3>
+        <p class="resumen-valor">48</p>
+        <a href="hoja-medicacion.html" class="resumen-enlace">Ver Hojas de Medicación &rarr;</a>
+      </div>
+
+      <div class="tarjeta-resumen tarjeta-naranja">
+        <h3 class="resumen-titulo">Camas Disponibles</h3>
+        <p class="resumen-valor">6</p>
+        <a href="mapa-camas.html" class="resumen-enlace">Gestionar Ingresos &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Panel de Acceso Rápido -->
+    <div class="seccion-dashboard">
+      <h2 class="cabecera-dashboard">Acceso Rápido</h2>
+      <div class="rejilla-2-columnas">
+        <a href="mapa-camas.html" class="panel-acceso panel-acceso-citas">
+          <h3 class="acceso-titulo">🛏️ Mapa de Camas</h3>
+          <p class="acceso-descripcion">Visualiza la ocupación de camas en tiempo real y gestiona ingresos y altas.</p>
+        </a>
+        <a href="hoja-medicacion.html" class="panel-acceso panel-acceso-busqueda">
+          <h3 class="acceso-titulo">💊 Hoja de Medicación</h3>
+          <p class="acceso-descripcion">Administra y registra la medicación de los pacientes hospitalizados.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Panel de Alertas -->
+    <div class="panel-datos" style="background-color: #fef3c7; border-left: 4px solid #f59e0b; margin-top: 2rem;">
+      <h2 class="cabecera-panel" style="color: #92400e;">⚠️ Alertas Activas</h2>
+      <ul style="list-style: none; padding: 0; margin: 0.5rem 0;">
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #fde68a;">• Paciente Cama 102 - Medicación pendiente 14:00h</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #fde68a;">• Cama 205 - Revisión de constantes vitales</li>
+        <li style="padding: 0.5rem 0;">• Paciente Cama 301 - Preparar alta hospitalaria</li>
+      </ul>
     </div>
   </div>
 </body>
